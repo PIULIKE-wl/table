@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background:url('background.jpg');
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+table{
+border: 1px solid black;
+margin: auto;
+border-spacing: 0 0;
+}
+td,th{
+text-align: center;
+height: 30px;
+width: 200px;
+border: 1px solid black;
+background-color: blanchedalmond;
+}
+th{
+background-color: rgb(18, 202, 95);
+}
+.push{
+height: 50px;
+width: 100px;
+margin: auto;
+margin-top: 10px;
+}
+.push button{
+height: 50px;
+width: 100px;
+}
+
+.push-window{
+height: 300px;
+width: 600px;
+background-color:blanchedalmond;
+position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+display: none;
+}
+.black{
+position: fixed;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+opacity: 0.7;
+display: none;
+}
+.in{
+margin-left: 135px;
+}
+.in span{
+display: inline-block;
+width: 75px;
+height: 20px;
+margin-top: 40px;
+font-size: 22px;
+}
+.in span input{
+width: 215px;
+height: 32px;
+border-radius: 20px;
+border: 1px solid black;
+}
+.push-window button{
+height: 57px;
+width: 171px;
+margin-left: 91px;
+margin-top: 30px;
+background-image: linear-gradient(to right, #cce016 0%, #97380c 100%);
+border-radius: 30px;
+}
+.search{
+height: 85px;
+width: 337px;
+margin: auto;
+}
+.search div{
+height: 42px;
+width: 200px;
+margin: auto;
+text-align: center;
+line-height: 42px;
+font-size: large;
+color: blanchedalmond;
+}
+.search input{
+float: left;
+height: 33px;
+width: 247px;
+border-right: none;
+}
+.search button{
+float: left;
+height: 37px;
+width: 81px;
+}
+button:hover{
+background-color: gold;
+transition: all 0.2s;
+}

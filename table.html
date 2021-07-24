@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+</head>
+<link rel="stylesheet" href="table-css.css">
+<body>
+    <div class="search">
+        <div>图书管理系统</div>
+        <input type="text" id="st">
+        <button>查询</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>书名</td>
+                    <th>出版社</td>
+                    <th>价格</td>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tb">
+                <tr>
+                    <td name="bn">微型计算机技术及应用</td>
+                    <td>清华大学出版社</td>
+                    <td>38</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td name="bn">我在挪威做木匠</td>
+                    <td>北京联合出版社</td>
+                    <td>22</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td name='bn'>进化的奇迹</td>
+                    <td>北京联合出版社</td>
+                    <td>25</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="push">
+            <button>添加</button>
+        </div>
+    </div>
+    <div class="black"></div>
+    <div class="push-window">
+        <div class="in">
+            <span>书名:</span>
+            <span>
+                <input type="text" placeholder="请输入书名" id="bookName">
+            </span>
+        </div>
+        <div class="in">
+            <span>出版社:</span>
+            <span>
+                <input type="text" placeholder="请输入出版社" id="ph">
+            </span>
+        </div>
+        <div class="in">
+            <span>价格:</span>
+            <span>
+                <input type="text" placeholder="请输入价格" id="price">
+            </span>
+        </div>
+        <button id="sure">确定</button>
+        <button id="cancel">取消</button>
+    </div>
+</body>
+</html>
+<script src="jquery-1.12.4.js"></script>
+<script src="table-jQ.js"></script>
+<!-- ajax的封装 -->
+<script src="promiseAjax.js"></script>
